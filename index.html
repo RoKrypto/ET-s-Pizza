@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./assets/css/style.min.css">
+		<script src="./assets/js/script.min.js" defer></script>
+		<title>ET's Pizza</title>
+	</head>
+	<body>
+		<header class="et__pizza__header">
+			<div class="wrapper">
+				<button class="button__reset et__pizza__hamburger__menu__button" type="button" id="hamburger__menu">
+					<svg viewBox="0 0 24 14" class="et__pizza__hamburger__menu__icon" aria-hidden="true">
+						<use href="./assets/imgs/svg/icons.svg#hamburger__menu"></use>
+					</svg>
+					<span class="screen__reader__text">Menu</span>
+				</button>
+				<a href="/" class="et__pizza__logo__link">
+					<img src="./assets/imgs/svg/et-pizza-logo.svg" alt="Et's Pizza Logo" class="et__pizza__logo">
+				</a>
+				<nav class="et__pizza__nav" id="nav__menu">
+					<ul class="list__reset et__pizza__nav__list">
+						<li class="et__pizza__nav__list__item">
+							<a href="#" class="et__pizza__nav__link">First sight</a>
+						</li>
+						<li class="et__pizza__nav__list__item">
+							<a href="#" class="et__pizza__nav__link">Flavors</a>
+						</li>
+						<li class="et__pizza__nav__list__item">
+							<a href="#" class="et__pizza__nav__link">Blog</a>
+						</li>
+						<li class="et__pizza__nav__list__item">
+							<a href="#" class="et__pizza__nav__link">Contact us</a>
+						</li>
+					</ul>
+				</nav>
+				<ul class="list__reset et__pizza__secondary__buttons__list">
+					<li class="et__pizza__secondary__buttons__list__item">
+						<button class="button__reset et__pizza__secondary__buttons__list__button" type="button" id="search__menu">
+							<svg viewBox="0 0 33 32" class="et__pizza__secondary__button__icon" aria-hidden="true">
+								<use href="./assets/imgs/svg/icons.svg#search"></use>
+							</svg>
+							<span class="screen__reader__text">Search</span>
+						</button>
+					</li>
+					<li class="et__pizza__secondary__buttons__list__item">
+						<button class="button__reset et__pizza__secondary__buttons__list__button" type="button" id="cart__button">
+							<svg viewBox="0 0 33 32" class="et__pizza__secondary__button__icon" aria-hidden="true">
+								<use href="./assets/imgs/svg/icons.svg#cart"></use>
+							</svg>
+							<span class="screen__reader__text">Cart</span>
+						</button>
+					</li>
+				</ul>
+				<form class="et__pizza__search__form" id="search__form">
+					<label for="search" class="screen__reader__text">Input your search term</label>
+					<input type="search" class="et__pizza__search__input" id="search" placeholder="Searching for ET's Pizzaland?">
+					<button class="button__reset et__pizza__search__button" type="button">
+						<svg viewBox="0 0 41 38" class="et__pizza__search__button__slice__icon" aria-hidden="true">
+							<use href="./assets/imgs/svg/icons.svg#pizza__slice"></use>
+						</svg>
+						<span class="screen__reader__text">Search term</span>
+					</button>
+				</form>
+				<section class="et__pizza__cart empty" id="shopping__cart">
+					<h2 class="et__pizza__cart__heading">Your cart</h2>
+					<div class="et__pizza__cart__empty__content" id="et__pizza__cart__empty__content">
+						<svg viewBox="0 0 41 38" class="et__pizza__cart__slice__icon" aria-hidden="true">
+							<use href="./assets/imgs/svg/icons.svg#pizza__slice"></use>
+						</svg>
+						<p class="et__pizza__cart__welcome">Prevent ET’s pizzas from getting off this planet by adding them here!</p>
+					</div>
+				</section>
+			</div>
+		</header>
+		<section class="et__pizza__hero">
+			<div class="wrapper">
+				<div class="et__pizza__hero__copy">
+					<h1 class="et__pizza__hero__heading">Dare to have a taste of something <span class="hero__highlight">out of this world</span></h1>
+					<p class="et__pizza__hero__description">A delicious brand new experience has landed on our planet to delight the most demanding palates.</p>
+					<a href="#" class="et__pizza__hero__cta">Can’t wait to take a bite!</a>
+				</div>
+				<picture>
+					<source media="(max-width:474px)" srcset="./assets/imgs/png/hero-img-max-474.png">
+					<source media="(max-width:673px)" srcset="./assets/imgs/png/hero-img-max-673.png">
+					<source media="(max-width:832px)" srcset="./assets/imgs/png/hero-img-max-832.png">
+					<source media="(max-width:1351px)" srcset="./assets/imgs/png/hero-img-max-1351.png">
+					<source media="(max-width:1800px)" srcset="./assets/imgs/png/hero-img-max-1800.png">
+					<img src="./assets/imgs/png/hero-img.png" alt="4 people grabbing their slices of ET's Pizza" class="et__pizza__hero__img" loading="lazy">
+				</picture>
+			</div>
+		</section>
+		<section class="et__featured__flavors">
+			<div class="wrapper">
+				<div class="et__featured__flavors__copy">
+					<h2 class="et__featured__flavors__heading"><span class="sub__heading__highlight">Otherworldly</span> trending flavors</h2>
+					<p class="et__featured__flavors__description">The most demanding palates have spoken... and so the stomachs! According to them, these are the ET’s flavors that performed a perfect happy landing on our planet’s heart.</p>
+					<a href="#" class="et__featured__flavors__cta">Have a taste of the rest too!</a>
+				</div>
+				<ul class="list__reset et__featured__flavors__list" id="featured__flavors__list">
+					<li class="et__featured__flavors__list__item js__et__featured__flavors__list__item" data-flavor = "dblchss">
+						<img src="./assets/imgs/png/double-cheese.png" alt="ET's double cheese pizza" class="et__featured__flavors__img js__et__featured__flavors__img animated__pizza">
+						<p class="et__featured__flavors__name js__et__featured__flavors__name">Double cheese</p>
+						<p class="et__featured__flavors__price">USD <span class="js__et__featured__flavors__price">13.42</span></p>
+						<label class="screen__reader__text" for="double__chesse__quantifier">Set your preferred quantity for double cheese</label>
+						<input class="et__featured__flavors__quantifier js__et__featured__flavors__quantifier" id="double__chesse__quantifier" type="number" value="1" min="1">
+						<button type="button" class="button__reset et__featured__flavors__cart__button js__et__featured__flavors__cart__button">Add to cart</button>
+					</li>
+					<li class="et__featured__flavors__list__item js__et__featured__flavors__list__item" data-flavor = "ktpr">
+						<img src="./assets/imgs/png/catupiry.png" alt="ET's catupiry pizza" class="et__featured__flavors__img js__et__featured__flavors__img animated__pizza" loading="lazy">
+						<p class="et__featured__flavors__name js__et__featured__flavors__name">Catupiry</p>
+						<p class="et__featured__flavors__price">USD <span class="js__et__featured__flavors__price">20.36</span></p>
+						<label class="screen__reader__text" for="catupiry__quantifier">Set your preferred quantity for catupiry</label>
+						<input class="et__featured__flavors__quantifier js__et__featured__flavors__quantifier" id="catupiry__quantifier" type="number" value="1" min="1">
+						<button type="button" class="button__reset et__featured__flavors__cart__button js__et__featured__flavors__cart__button">Add to cart</button>
+					</li>
+					<li class="et__featured__flavors__list__item js__et__featured__flavors__list__item" data-flavor = "ppprn">
+						<img src="./assets/imgs/png/pepperoni.png" alt="ET's pepperoni pizza" class="et__featured__flavors__img js__et__featured__flavors__img animated__pizza" loading="lazy">
+						<p class="et__featured__flavors__name js__et__featured__flavors__name">Pepperoni</p>
+						<p class="et__featured__flavors__price">USD <span class="js__et__featured__flavors__price">15.30</span></p>
+						<label class="screen__reader__text" for="pepperoni__quantifier">Set your preferred quantity for pepperoni</label>
+						<input class="et__featured__flavors__quantifier js__et__featured__flavors__quantifier" id="pepperoni__quantifier" type="number" value="1" min="1">
+						<button type="button" class="button__reset et__featured__flavors__cart__button js__et__featured__flavors__cart__button">Add to cart</button>
+					</li>
+					<li class="et__featured__flavors__list__item js__et__featured__flavors__list__item" data-flavor = "bbqchkn">
+						<img src="./assets/imgs/png/bbq-chicken.png" alt="ET's BBQ chicken pizza" class="et__featured__flavors__img js__et__featured__flavors__img animated__pizza" loading="lazy">
+						<p class="et__featured__flavors__name js__et__featured__flavors__name">BBQ chicken</p>
+						<p class="et__featured__flavors__price">USD <span class="js__et__featured__flavors__price">24.71</span></p>
+						<label class="screen__reader__text" for="bbq__chicken__quantifier">Set your preferred quantity for BBQ chicken</label>
+						<input class="et__featured__flavors__quantifier js__et__featured__flavors__quantifier" id="bbq__chicken__quantifier" type="number" value="1" min="1">
+						<button type="button" class="button__reset et__featured__flavors__cart__button js__et__featured__flavors__cart__button">Add to cart</button>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="et__articles">
+			<div class="wrapper">
+				<h2 class="et__articles__heading"><span class="sub__heading__highlight">Since ET’S landing,</span> things haven’t gone unnoticed</h2>
+				<ul class="list__reset et__articles__list">
+					<li class="et__articles__list__item">
+						<figure class="figure__reset et__articles__img__figure">
+							<img src="./assets/imgs/jpg/article-1.jpg" alt="Person taking a picture of healthy meal with a cellphone" class="et__articles__img" loading="lazy">
+							<figcaption class="et__articles__img__figcaption">
+								<time class="et__articles__date" datetime="2021-10-04">Oct 4th, 2021</time>
+								<p class="et__articles__category">Food & beverage</p>
+								<p class="et__articles__title">Do you live in one of the best foodie cities in your country?</p>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="et__articles__list__item">
+						<figure class="figure__reset et__articles__img__figure">
+							<img src="./assets/imgs/jpg/article-2.jpg" alt="Person taking a picture of healthy meal with a cellphone" class="et__articles__img" loading="lazy">
+							<figcaption class="et__articles__img__figcaption">
+								<time class="et__articles__date" datetime="2021-09-30">Sep 30th, 2021</time>
+								<p class="et__articles__category">Delivery</p>
+								<p class="et__articles__title">We took part on the National Pizza Month celebration with pink-box fundraiser</p>
+							</figcaption>
+						</figure>
+					</li>
+					<li class="et__articles__list__item">
+						<figure class="figure__reset et__articles__img__figure">
+							<img src="./assets/imgs/jpg/article-3.jpg" alt="Person taking a picture of healthy meal with a cellphone" class="et__articles__img" loading="lazy">
+							<figcaption class="et__articles__img__figcaption">
+								<time class="et__articles__date" datetime="2021-09-27">Sep 27th, 2021</time>
+								<p class="et__articles__category">Technology</p>
+								<p class="et__articles__title">UK pizza vending machine expands</p>
+							</figcaption>
+						</figure>
+					</li>
+				</ul>
+				<a href="#" class="et__articles__cta">Read the rest of the blog</a>
+			</div>
+		</section>
+		<footer>
+			<section class="et__newsletter">
+				<div class="wrapper">
+					<div class="et__newsletter__copy">
+						<h2 class="et__newsletter__heading"><span class="sub__heading__highlight">You should</span> suscribe to our newsletter</h2>
+						<p class="et__pizza__hero__description">In addition to getting the latest news about what we are up to conquering worlds with our most loved pizza, you will receive a USD 20 coupon for first shopping.</p>
+						<form class="et__newsletter__form">
+							<label for="newsletter__label" class="screen__reader__text">Input your email</label>
+							<input type="email" id="newsletter__label" class="et__newsletter__input" placeholder="Input your email">
+							<button type="button" class="button__reset et__newsletter__button">
+								<svg viewBox="0 0 41 38" class="et__newsletter__button__slice__icon" aria-hidden="true">
+									<use href="./assets/imgs/svg/icons.svg#pizza__slice"></use>
+								</svg>
+								<span class="screen__reader__text">Send email</span>
+							</button>
+						</form>
+					</div>
+					<picture>
+						<source media="(max-width:907px)" srcset="./assets/imgs/png/astronaut-max-907.png">
+						<img src="./assets/imgs/png/astronaut.png" alt="Astronaut floating in space" class="et__newsletter__img" loading="lazy">
+					</picture>
+				</div>
+			</section>
+			<section class="et__subfooter">
+				<div class="wrapper">
+					<h2 class="screen__reader__text">Some helpful information in case you want to reach out</h2>
+					<div class="et__subfooter__1">
+						<article class="et__subfooter__widget">
+							<h3 class="et__subfooter__widget__title">Contact info</h3>
+							<ul class="list__reset et__subfooter__widget__content__list">
+								<li class="et__subfooter__widget__content__list__item"><a class="et__subfooter__widget__content__link" href="#">1374 Penn Street, Pound Ridge, New York</a></li>
+								<li class="et__subfooter__widget__content__list__item">Zip code: 10576</li>
+								<li class="et__subfooter__widget__content__list__item"><a class="et__subfooter__widget__content__link" href="tel:17183472051546">Phone: 347-205-1546</a></li>
+							</ul>
+						</article>
+
+						<article class="et__subfooter__widget">
+							<h3 class="et__subfooter__widget__title">Opening hours</h3>
+							<ul class="list__reset et__subfooter__widget__content__list">
+								<li class="et__subfooter__widget__content__list__item">Tue - Sun : 6pm - 11pm</li>
+								<li class="et__subfooter__widget__content__list__item">Mon: Closed</li>
+							</ul>
+						</article>
+
+						<article class="et__subfooter__widget">
+							<h3 class="et__subfooter__widget__title">Useful links</h3>
+							<ul class="list__reset et__subfooter__widget__content__list">
+								<li class="et__subfooter__widget__content__list__item"><a class="et__subfooter__widget__content__link" href="#">Delivery information</a></li>
+								<li class="et__subfooter__widget__content__list__item"><a class="et__subfooter__widget__content__link" href="#">Privacy policy</a></li>
+								<li class="et__subfooter__widget__content__list__item"><a class="et__subfooter__widget__content__link" href="#">Order tracking</a></li>
+							</ul>
+						</article>
+					</div>
+					<div class="et__subfooter__2">
+						<p class="et__subfooter__copyright">2021 © Et’s Pizza. All rights reserved</p>
+						<ul class="list__reset et__subfooter__payment__methods__list">
+							<li class="et__subfooter__payment__methods__list__item">
+								<svg viewBox="0 0 42 32" class="et__subfooter__payment__methods__icon" aria-hidden="true">
+									<use href="./assets/imgs/svg/icons.svg#paypal"></use>
+								</svg>
+								<span class="screen__reader__text">Paypal</span>
+							</li>
+							<li class="et__subfooter__payment__methods__list__item">
+								<svg viewBox="0 0 52 32" class="et__subfooter__payment__methods__icon" aria-hidden="true">
+									<use href="./assets/imgs/svg/icons.svg#visa"></use>
+								</svg>
+								<span class="screen__reader__text">Visa</span>
+							</li>
+							<li class="et__subfooter__payment__methods__list__item">
+								<svg viewBox="0 0 42 32" class="et__subfooter__payment__methods__icon" aria-hidden="true">
+									<use href="./assets/imgs/svg/icons.svg#mastercard"></use>
+								</svg>
+								<span class="screen__reader__text">Mastercard</span>
+							</li>
+							<li class="et__subfooter__payment__methods__list__item">
+								<svg viewBox="0 0 49 32" class="et__subfooter__payment__methods__icon" aria-hidden="true">
+									<use href="./assets/imgs/svg/icons.svg#american__express"></use>
+								</svg>
+								<span class="screen__reader__text">American Express</span>
+							</li>
+						</ul>
+						<ul class="list__reset et__subfooter__social__networks__list">
+							<li class="et__subfooter__social__networks__list__item">
+								<a href="#" class="et__subfooter__social__networks__link">
+									<svg viewBox="0 0 8 15" class="et__subfooter__social__networks__icon" aria-hidden="true">
+										<use href="./assets/imgs/svg/icons.svg#facebook"></use>
+									</svg>
+									<span class="screen__reader__text">Facebook</span>
+								</a>
+							</li>
+							<li class="et__subfooter__social__networks__list__item">
+								<a href="#" class="et__subfooter__social__networks__link">
+									<svg viewBox="0 0 19 15" class="et__subfooter__social__networks__icon" aria-hidden="true">
+										<use href="./assets/imgs/svg/icons.svg#twitter"></use>
+									</svg>
+									<span class="screen__reader__text">Twitter</span>
+								</a>
+							</li>
+							<li class="et__subfooter__social__networks__list__item">
+								<a href="#" class="et__subfooter__social__networks__link">
+									<svg viewBox="0 0 15 15" class="et__subfooter__social__networks__icon" aria-hidden="true">
+										<use href="./assets/imgs/svg/icons.svg#instagram"></use>
+									</svg>
+									<span class="screen__reader__text">Instagram</span>
+								</a>
+							</li>
+							<li class="et__subfooter__social__networks__list__item">
+								<a href="#" class="et__subfooter__social__networks__link">
+									<svg viewBox="0 0 23 15" class="et__subfooter__social__networks__icon" aria-hidden="true">
+										<use href="./assets/imgs/svg/icons.svg#youtube"></use>
+									</svg>
+									<span class="screen__reader__text">Youtube</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>

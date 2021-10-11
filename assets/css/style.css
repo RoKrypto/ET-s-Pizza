@@ -1,0 +1,1173 @@
+:root {
+	/* Fonts */
+	--heading-font: 'Bebas Neue', sans-serif;
+	--content-font: 'Roboto', sans-serif;
+
+	/* Colors */
+	--color-1: #A41F1F;
+	--color-2: #FDCF73;
+	--color-3: #FFE7B8;
+	--color-4: #FFF2D9;
+	--color-5: #2F2F2F;
+	--color-6: #555;
+	--color-7: #999;
+	--color-8: #c4c4c4;
+	--color-9: #fff;
+	--color-10: #EAEAEA;
+
+	/*Header Height*/
+	--header-height: 115px;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+svg {
+    pointer-events: none;
+}
+
+.button__reset {
+	padding: 0;
+	cursor: pointer;
+}
+
+.list__reset {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+body,
+.figure__reset {
+	margin: 0;
+}
+
+.et__pizza__header {
+	background-color: var(--color-1);
+}
+
+.et__pizza__header,
+.et__pizza__nav__link::before,
+.et__pizza__search__form,
+.et__pizza__cart,
+.et__featured__flavors__quantifier,
+.et__featured__flavors__cart__button {
+	width: 100%;
+}
+
+.wrapper,
+.et__featured__flavors__img,
+.et__featured__flavors__cart__button {
+	margin-inline: auto;
+}
+
+.button__reset,
+.et__pizza__search__input,
+.et__newsletter__input {
+	background-color: transparent;
+}
+
+.button__reset,
+.et__pizza__search__input {
+	border: none;
+}
+
+.button__reset,
+picture,
+.et__pizza__hamburger__menu__icon,
+.et__pizza__secondary__button__icon,
+.et__pizza__logo,
+.et__pizza__nav__link,
+.et__pizza__nav__link::before,
+.et__pizza__search__button__slice__icon,
+.et__pizza__cart__loaded__item__img,
+.et__pizza__hero__img,
+.sub__heading__highlight,
+.et__featured__flavors__img,
+.et__featured__flavors__quantifier,
+.et__articles__heading .sub__heading__highlight,
+.et__articles__img,
+.et__articles__date,
+.et__newsletter__button__slice__icon,
+.et__newsletter__img,
+.et__subfooter__social__networks__link {
+	display: block;
+}
+
+.et__featured__flavors__img,
+.et__featured__flavors__quantifier,
+.et__articles__img {
+	max-width: 100%;
+}
+
+.et__pizza__hamburger__menu__icon,
+.et__pizza__secondary__button__icon,
+.et__subfooter__payment__methods__icon {
+	fill: var(--color-9);
+}
+
+.et__pizza__hamburger__menu__icon,
+.et__pizza__secondary__button__icon {
+	width: 3.2em;
+}
+
+.screen__reader__text,
+.et__pizza__nav__link::before,
+.et__pizza__search__form,
+.et__pizza__cart,
+.et__pizza__cart__slice__icon,
+.et__pizza__cart__welcome {
+	position: absolute;
+}
+
+.et__pizza__header .wrapper,
+.et__pizza__secondary__buttons__list,
+.et__pizza__nav__list,
+.et__pizza__search__form,
+.et__pizza__cart,
+.et__pizza__cart__loaded__list__item,
+.et__pizza__cart__loaded__item__figure,
+.et__pizza__cart__checkout,
+.et__pizza__cart__checkout__link,
+.et__pizza__hero .wrapper,
+.et__featured__flavors .wrapper,
+.et__articles__list,
+.et__articles__img__figure,
+.et__newsletter .wrapper,
+.et__newsletter__form,
+.et__subfooter__1,
+.et__subfooter__2,
+.et__subfooter__payment__methods__list,
+.et__subfooter__social__networks__list {
+	display: flex;
+}
+
+.et__pizza__header .wrapper,
+.et__pizza__search__form,
+.et__pizza__cart__loaded__list__item,
+.et__pizza__cart__checkout,
+.et__pizza__hero .wrapper,
+.et__featured__flavors .wrapper,
+.et__newsletter .wrapper,
+.et__subfooter__1,
+.et__subfooter__2 {
+	justify-content: space-between;
+}
+
+.et__pizza__header .wrapper,
+.et__pizza__cart__loaded__list__item,
+.et__pizza__cart__loaded__item__figure,
+.et__pizza__cart__checkout,
+.et__pizza__cart__checkout__link,
+.et__pizza__hero .wrapper,
+.et__featured__flavors__list,
+.et__articles__img__figure,
+.et__newsletter .wrapper,
+.et__subfooter__2 {
+	align-items: center;
+}
+
+.et__pizza__cart__loaded__item__name,
+.sub__heading__highlight {
+	margin-bottom: .5em;
+}
+
+.list__reset,
+.et__pizza__cart__welcome,
+.et__pizza__cart__loaded__item__count,
+.et__pizza__cart__loaded__item__subtotal,
+.et__pizza__cart__checkout__amount,
+.et__featured__flavors__name,
+.et__subfooter__copyright {
+	margin-block: 0;
+}
+
+.et__pizza__hamburger__menu__button,
+.et__pizza__cart__empty__content.hide {
+	display: none;
+}
+
+.et__pizza__hamburger__menu__button.active .et__pizza__hamburger__menu__icon,
+.et__pizza__secondary__buttons__list__button.active .et__pizza__secondary__button__icon {
+	fill:var(--color-2);
+}
+
+.et__pizza__nav__link,
+.et__pizza__cart__empty__content {
+	position: relative;
+}
+
+.et__pizza__nav__link,
+.et__pizza__cart__checkout__link,
+.et__pizza__hero__cta,
+.et__featured__flavors__cta,
+.et__articles__cta,
+.et__subfooter__widget__content__link {
+	text-decoration: none;
+}
+
+.et__pizza__nav__link,
+.et__pizza__hero__description,
+.et__newsletter__heading,
+.et__newsletter__input,
+.et__newsletter__input::placeholder,
+.et__subfooter__widget__content__list__item,
+.et__subfooter__copyright {
+	color: var(--color-9);
+}
+
+.et__pizza__nav__link,
+.et__pizza__cart__welcome,
+.et__pizza__cart__loaded__item__name,
+.et__pizza__cart__loaded__item__count,
+.et__pizza__cart__checkout__link,
+.et__pizza__hero__description,
+.et__pizza__hero__cta,
+.sub__heading__highlight,
+.et__featured__flavors__description,
+.et__featured__flavors__cta,
+.et__featured__flavors__name,
+.et__featured__flavors__price,
+.et__featured__flavors__cart__button,
+.et__articles__date,
+.et__articles__category,
+.et__articles__title,
+.et__articles__cta,
+.et__subfooter__widget__title,
+.et__subfooter__widget__content__list__item,
+.et__subfooter__copyright {
+	font-family: var(--content-font);
+}
+
+.et__pizza__nav__link,
+.et__pizza__cart__heading,
+.et__featured__flavors__heading,
+.et__articles__heading,
+.et__articles__category,
+.et__newsletter__heading,
+.et__subfooter__widget__title {
+	text-transform: uppercase;
+}
+
+.et__pizza__nav__link,
+.et__pizza__cart__loaded__item__name,
+.et__pizza__hero__cta,
+.sub__heading__highlight,
+.et__featured__flavors__cta,
+.et__featured__flavors__name,
+.et__featured__flavors__cart__button,
+.et__articles__date,
+.et__articles__category,
+.et__articles__title,
+.et__articles__cta,
+.et__subfooter__widget__title {
+	font-weight: 700;
+}
+
+.et__pizza__nav__link,
+.et__pizza__search__input,
+.et__pizza__cart__welcome,
+.et__pizza__cart__loaded__item__name,
+.et__pizza__cart__checkout__link,
+.et__featured__flavors__price,
+.et__featured__flavors__quantifier,
+.et__articles__date,
+.et__articles__category,
+.et__subfooter__widget__content__list__item,
+.et__subfooter__copyright {
+	font-size: 1.6rem;
+}
+
+.et__pizza__nav__link::before,
+.et__pizza__search__form,
+.et__pizza__cart {
+	bottom: 0;
+}
+
+.et__pizza__nav__link::before,
+.et__pizza__search__form,
+.et__pizza__cart {
+	transition: transform .25s ease-out;
+}
+
+.et__pizza__nav__link:hover,
+.hero__highlight,
+.et__subfooter__widget__title {
+	color: var(--color-2);
+}
+
+.et__pizza__search__input,
+.et__pizza__cart__empty__content,
+.et__pizza__cart__loaded__list,
+.et__newsletter__input {
+	flex-grow: 1;
+}
+
+.et__pizza__search__input,
+.et__pizza__search__input::placeholder,
+.et__pizza__cart__welcome,
+.et__pizza__cart__loaded__item__count,
+.et__pizza__cart__checkout__amount,
+.et__pizza__cart__checkout__link,
+.et__pizza__hero__cta,
+.et__featured__flavors__cta,
+.et__featured__flavors__heading,
+.et__featured__flavors__description,
+.et__featured__flavors__quantifier,
+.et__articles__heading,
+.et__articles__date,
+.et__articles__title,
+.et__articles__cta {
+	color: var(--color-6);
+}
+
+.et__pizza__search__input::placeholder,
+.et__newsletter__input::placeholder {
+	opacity: 1;
+}
+
+.et__pizza__search__button__slice__icon,
+.et__newsletter__button__slice__icon {
+	fill: var(--color-6);
+}
+
+.et__pizza__cart__heading,
+.et__pizza__cart__loaded__item__subtotal,
+.et__pizza__cart__checkout__amount,
+.et__pizza__hero__heading,
+.et__featured__flavors__heading,
+.et__articles__heading,
+.et__newsletter__heading {
+	font-family: var(--heading-font);
+}
+
+.et__pizza__cart__heading,
+.et__pizza__cart__loaded__item__name,
+.sub__heading__highlight,
+.et__featured__flavors__name,
+.et__featured__flavors__cart__button,
+.et__articles__category {
+	color: var(--color-1);
+}
+
+.et__pizza__cart__heading,
+.et__pizza__cart__loaded__item__name,
+.et__pizza__hero__heading,
+.et__pizza__hero__description,
+.et__featured__flavors__heading,
+.et__featured__flavors__description,
+.et__articles__heading,
+.et__newsletter__heading,
+.et__subfooter__widget__title {
+	margin-top: 0;
+}
+
+.et__pizza__cart__heading,
+.et__pizza__cart__loaded__item__subtotal,
+.et__pizza__cart__checkout__amount,
+.et__pizza__hero__heading,
+.et__featured__flavors__heading,
+.et__articles__heading,
+.et__newsletter__heading {
+	font-weight: normal;
+}
+
+.et__pizza__cart__heading,
+.et__pizza__cart__checkout,
+.et__articles__list__item {
+	flex-shrink: 0;
+}
+
+.et__pizza__cart__slice__icon,
+.et__pizza__cart__welcome {
+	top: 50%;
+	left: 50%;
+}
+
+.et__pizza__cart__welcome,
+.et__featured__flavors__name,
+.et__featured__flavors__price,
+.et__featured__flavors__quantifier {
+	text-align: center;
+}
+
+.et__pizza__cart__welcome,
+.et__pizza__hero__description,
+.et__featured__flavors__description,
+.et__articles__title {
+	line-height: 1.5;
+}
+
+.et__pizza__cart__loaded__item__subtotal,
+.et__pizza__cart__checkout__amount,
+.et__pizza__hero__description,
+.et__pizza__hero__cta,
+.et__subfooter__widget__title,
+.et__featured__flavors__description,
+.et__featured__flavors__cta,
+.et__articles__title,
+.et__articles__cta,
+.et__newsletter__input {
+	font-size: 2.4rem;
+}
+
+.et__pizza__cart__checkout,
+.et__pizza__hero__cta,
+.et__featured__flavors__cta,
+.et__articles,
+.et__newsletter__button,
+.et__subfooter__social__networks__link {
+	background-color: var(--color-2);
+}
+
+.et__pizza__cart__checkout__link:hover,
+.et__subfooter__widget__content__link:hover {
+	text-decoration: underline;
+}
+
+.et__pizza__hero .wrapper,
+.et__articles .wrapper,
+.et__newsletter .wrapper {
+	width: min(167.2em, 87.5%);
+}
+
+.et__pizza__hero .wrapper,
+.et__articles .wrapper,
+.et__newsletter .wrapper {
+	margin-inline-end: 0;
+}
+
+.et__pizza__hero__heading,
+.et__featured__flavors__heading,
+.et__articles__heading,
+.et__newsletter__heading {
+	font-size: 7.2rem;
+}
+
+.et__pizza__hero__heading,
+.et__featured__flavors__heading,
+.et__newsletter__heading {
+	margin-bottom: .3em;
+}
+
+.et__pizza__hero__description,
+.et__featured__flavors__description {
+	margin-bottom: 1.5em;
+}
+
+.et__pizza__hero__cta,
+.et__featured__flavors__cta,
+.et__articles__cta {
+	display: inline-block;
+}
+
+.et__pizza__hero__cta,
+.et__featured__flavors__cta,
+.et__featured__flavors__cart__button,
+.et__articles__cta {
+	padding: 1em 2em;
+}
+
+.et__featured__flavors,
+.et__articles {
+	padding-block: 14.4em;
+}
+
+.et__pizza__hero__heading,
+.et__featured__flavors__heading,
+.et__articles__heading,
+.et__newsletter__heading {
+	line-height: 1;
+}
+
+.et__subfooter__1,
+.et__subfooter__2 {
+	gap: 4.8em;
+	flex-wrap: wrap;
+}
+
+.sub__heading__highlight,
+.et__subfooter__widget__title {
+	letter-spacing: .36em;
+}
+
+.et__featured__flavors__quantifier,
+.et__featured__flavors__cart__button {
+	border: 1px solid var(--color-1);
+}
+
+.et__subfooter__payment__methods__list__item:not(:first-child),
+.et__subfooter__social__networks__list__item:not(:first-child) {
+	margin-left: .8em;
+}
+
+body {
+	padding-top: var(--header-height);
+}
+
+/* Header Section */
+.et__pizza__header {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+
+.wrapper {
+	width: min(142.4em, 87.5%);
+}
+
+.screen__reader__text {
+	opacity: 0;
+}
+
+.et__pizza__secondary__buttons__list__item:not(:first-child) {
+	margin-left: 3.2em;
+}
+
+.et__pizza__nav__link {
+	padding: 3em 1.5em;
+}
+
+.et__pizza__nav__link::before {
+	left: 0;
+	content:'';
+	height: .5em;
+	background-color:var(--color-2);
+	transform: scaleX(0);
+}
+
+.et__pizza__nav__link:hover::before {
+	transform: scaleX(1);
+}
+
+.et__pizza__search__form,
+.et__pizza__cart {
+	right: 0;
+	transform: translate(100%, 100%);
+	max-width: 45.6em;
+	padding: 2em;
+	background-color:var(--color-4);
+}
+
+.et__pizza__search__input {
+	border-bottom: 1px solid var(--color-6);
+	margin-right: .75em;
+}
+
+.et__pizza__search__button__slice__icon {
+	width: 2em;
+}
+
+.et__pizza__cart {
+	max-height: calc(100vh - var(--header-height));
+	flex-direction: column;
+}
+
+.et__pizza__cart.empty {
+	max-height: 0;
+	min-height: calc(100vh - var(--header-height));
+}
+
+.et__pizza__cart__heading {
+	font-size: 4em;
+}
+
+.et__pizza__cart__slice__icon {
+	z-index: -1;
+	transform: translate(-50%, -50%) rotate(90deg);
+	fill: var(--color-3);
+}
+
+.et__pizza__cart__welcome {
+	transform: translate(-50%, -50%);
+}
+
+.et__pizza__cart__loaded__list {
+	overflow-y: auto;
+}
+
+.et__pizza__cart__loaded__list__item {
+	padding-bottom: 2.4em;
+}
+
+.et__pizza__cart__loaded__list__item:not(:first-child) {
+	border-top: 1px solid var(--color-8);
+	padding-top: 2.4em;
+}
+
+.et__pizza__cart__loaded__item__figure {
+	gap: .8em;
+}
+
+.et__pizza__cart__loaded__item__count {
+	font-size: 1.2rem;
+}
+
+.et__pizza__cart__loaded__item__subtotal {
+	color: var(--color-7);
+}
+
+.et__pizza__cart__loaded__item__img {
+	width: 7.2em;
+}
+
+.et__pizza__cart__loaded__item__trash__icon {
+	height: 2.4em;
+	fill: var(--color-7);
+}
+
+.et__pizza__cart__checkout {
+	padding: 1.2em 2.4em;
+	margin-top: 2.4em;
+}
+
+.et__pizza__cart__checkout__arrow__icon {
+	width: 1.2em;
+	margin-left: .4em;
+}
+
+.et__pizza__search__form.show,
+.et__pizza__cart.show {
+	transform: translate(0, 100%);
+}
+
+/* Hero Section */
+.et__pizza__hero {
+	background: url(../imgs/jpg/hero-background.jpg) no-repeat top center / cover;
+}
+
+.et__pizza__hero__copy,
+.et__featured__flavors__copy {
+	max-width: 46.4em;
+}
+
+.et__featured__flavors__copy {
+	position: sticky;
+	top: calc(14.4em + var(--header-height));
+}
+
+.et__pizza__hero__heading {
+	color:var(--color-9);
+}
+
+.et__pizza__hero__img {
+	max-width: 196em;
+}
+
+/* Featured / trending flavors section */
+
+.et__featured__flavors {
+	background: var(--color-10) url(../imgs/png/featured-flavors-background.png) no-repeat top center / cover;
+}
+
+.et__featured__flavors .wrapper {
+	align-items: flex-start;
+}
+
+.et__featured__flavors__heading {
+	margin-bottom: .1em;
+}
+
+.sub__heading__highlight {
+	font-size: .33em;
+}
+
+.et__featured__flavors__list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 8em;
+	row-gap: 0;
+}
+
+.et__featured__flavors__list__item {
+	padding: 0 2.4em 2.4em 2.4em;
+	background: linear-gradient(to bottom, transparent 0%, transparent 25%, var(--color-9) 25%, var(--color-9) 100%);
+}
+
+.et__featured__flavors__list__item:nth-child(odd) {
+	margin-top: 10em;
+}
+
+.et__featured__flavors__list__item:nth-child(even) {
+	transform: translateY(-10em);
+}
+
+.et__featured__flavors__img {
+	transform: scale(.88);
+}
+
+.et__featured__flavors__name {
+	font-size: 2.4em;
+}
+
+.animated__pizza {
+	animation: going-in-circles 60s linear infinite;
+}
+
+@keyframes going-in-circles {
+	to {
+		transform: scale(.88) rotate(1turn);
+	}
+}
+
+.et__featured__flavors__price {
+	margin-top: .5em;
+}
+
+.et__featured__flavors__quantifier {
+	padding: .5em 1em;
+	margin-bottom: 1em;
+}
+
+/* Blog Section */
+
+.et__articles__heading {
+	margin-right: .5em;
+	margin-bottom: .64em;
+}
+
+.et__articles__list {
+	overflow-x: auto;
+	margin-bottom: 5.6em;
+	gap: 6.4em;
+}
+
+.et__articles__img__figure {
+	padding: 2.4em 2.4em 2.4em 0;
+	background: linear-gradient(to right, transparent 0%, transparent 25%, var(--color-9) 25%, var(--color-9) 100%);
+	max-width: 68.8em;
+	gap: 2.4em;
+}
+
+.et__articles__title {
+	margin-bottom: 0;
+}
+
+.et__articles__cta {
+	border: 2px solid var(--color-6);
+}
+
+/* Footer Section */
+/* Newsletter Section */
+
+.et__newsletter {
+	background: url(../imgs/jpg/newsletter-background.jpg) no-repeat top center / cover;
+}
+
+.et__newsletter .wrapper {
+	gap: 7.2em;
+}
+
+.et__newsletter__copy {
+	max-width: 70.4em;
+}
+
+.et__newsletter__input {
+	border: 2px solid var(--color-9);
+	border-right: none;
+	padding-inline: 1em;
+} 
+
+.et__newsletter__button {
+	padding: 1em 1.5em;
+}
+
+.et__newsletter__button__slice__icon {
+	width: 4em;
+}
+
+/* Useful links */
+
+.et__subfooter {
+	background-color: var(--color-5);
+}
+
+.et__subfooter__1 {
+	padding-block: 7.2em;
+	border-bottom: 1px solid var(--color-2);
+}
+
+.et__subfooter__widget__content__list__item:not(:first-child) {
+	margin-top: 1.5em;
+}
+
+.et__subfooter__widget__content__link {
+	color: currentColor;
+}
+
+.et__subfooter__2 {
+	padding-block: 3.2em;
+}
+
+.et__subfooter__payment__methods__icon {
+	height: 3.2em;
+}
+
+.et__subfooter__social__networks__link {
+	padding: 1.5em 2em;
+}
+
+.et__subfooter__social__networks__icon {
+	height: 1.6em;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 101.6875rem) {
+	.et__pizza__hero .wrapper,
+	.et__articles .wrapper,
+	.et__newsletter .wrapper {
+		width: min(167.2em, 94%);
+	}
+}
+
+@media screen and (max-width: 89.9375rem) {
+	.et__articles__img__figure {
+    flex-direction: column;
+    padding: 0 2.4em 2.4em 2.4em;
+    background: linear-gradient(to bottom, transparent 0%, transparent 25%, var(--color-9) 25%, var(--color-9) 100%);
+    max-width: 45.6em;
+	}
+
+	.et__articles__date,
+	.et__articles__category {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 87.4375rem) {
+	.et__featured__flavors .wrapper {
+		width: min(167.2em, 94%);
+		margin-right: 0;
+		align-items: flex-end;
+		gap: 3.2em;
+	}
+	
+	.et__featured__flavors__copy {
+		position: static;
+	}
+	
+	.et__featured__flavors__list {
+		display: flex;
+		align-items: center;
+		column-gap: 2.4em;
+		overflow-x: auto;
+	}
+
+	.et__featured__flavors__list__item {
+		flex-shrink: 0;
+	}
+
+	.et__featured__flavors__list__item:nth-child(odd) {
+		margin-top: 0;
+	}
+	
+	.et__featured__flavors__list__item:nth-child(even) {
+		transform: translateY(0);
+	}
+}
+
+/* Hack to solve right padding overflow bug*/
+/* https://alexandergottlieb.com/2018/02/22/overflow-scroll-and-the-right-padding-problem-a-css-only-solution/ */
+@media screen and (max-width: 75.0625rem) {
+	.et__featured__flavors__list {
+		position: relative;
+	}
+	
+	.et__featured__flavors__list__item:last-child::after {
+		position: absolute;
+		right: -2.4em;
+		content: "";
+		display: block;
+		width: 2.4em;
+		height: 1px;
+	}
+} /* Hack to solve right padding overflow bug */
+
+@media screen and (max-width: 64rem) {
+	:root{
+		--header-height: 53.33px;
+	}
+	
+	.et__pizza__hamburger__menu__button,
+	.et__pizza__nav__link {
+		display: block;
+	}
+
+	.et__pizza__nav__list,
+	.et__featured__flavors .wrapper {
+		flex-direction: column;
+	}
+
+	.et__pizza__hamburger__menu__icon {
+		width: 2.4em;
+	}
+
+	.et__pizza__logo {
+		height: 2.4em;
+	}
+	
+	.et__pizza__nav {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		transform: translate(-100%, 100%);
+		transition: transform .25s ease-out;
+		width: 100%;
+	}
+
+	.et__pizza__nav.show {
+		transform: translate(0, 100%);
+	}
+	
+	.et__pizza__nav__list__item:not(:last-child) {
+		border-bottom: 1px solid var(--color-8);
+	}
+	
+	.et__pizza__nav__link {
+		text-decoration: none;
+		color: var(--color-6);
+		padding: 1.2em 2.4em;
+		font-family: var(--content-font);
+		text-transform: uppercase;
+		font-weight: 700;
+		background-color:var(--color-4);
+		text-align: center;
+	}
+	
+	.et__pizza__secondary__buttons__list__item:not(:first-child) {
+		margin-left: 1.6em;
+	}
+
+	.et__pizza__secondary__buttons__list__button {
+		padding: 1em 0;
+	}
+
+	.et__pizza__secondary__button__icon {
+		height: 2em;
+	}
+
+	.et__pizza__search__form,
+	.et__pizza__cart {
+		max-width: none;
+	}
+
+	.et__featured__flavors .wrapper {
+		align-items: stretch;
+	}
+
+	.et__featured__flavors__copy {
+		max-width: 94%;
+	}
+}
+
+@media screen and (max-width: 58.9375rem) {
+	.et__pizza__hero__heading {
+		font-size: 5.45rem;
+	}
+
+	.et__pizza__hero__description,
+	.et__pizza__hero__cta,
+	.et__newsletter__input {
+		font-size: 1.81rem;
+	}
+
+	.et__newsletter__button {
+		padding: 0;
+	}
+
+	.et__newsletter__button__slice__icon {
+		transform: scale(.5);
+	}
+}
+
+@media screen and (max-width: 56.6875rem) {
+	.et__newsletter {
+		padding-top: 14.4em;
+	}
+	
+	.et__newsletter .wrapper {
+		flex-direction: column;
+		gap: 5.4em;
+	}
+
+	.et__newsletter__copy {
+		max-width: 94%;
+		align-self: flex-start;
+	}
+
+	.et__newsletter .wrapper picture {
+		align-self: flex-end;
+	}
+
+	.et__newsletter__img {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 56.25rem) {
+	.et__articles {
+		padding-block: 8.8em;
+	}
+
+	.et__articles__list {
+		gap: 3.2em
+	}
+}
+
+@media screen and (max-width: 42.1875rem) {
+	.et__articles__img__figure {
+		max-width: 33.2em;
+	}
+}
+
+@media screen and (max-width: 42.0625rem) {
+	.et__pizza__hero__heading,
+	.et__newsletter__heading {
+		font-size: 4rem;
+	}
+
+	.et__pizza__hero__description,
+	.et__pizza__hero__cta,
+	.et__newsletter__input {
+		font-size: 1.2rem;
+	}
+
+	.et__newsletter {
+		padding-top: 3.2em;
+	}
+}
+
+@media screen and (max-width: 30rem) {
+	.et__articles {
+		padding-block: 3.2em;
+	}
+
+	.et__articles__list,
+	.et__articles__img__figure {
+		gap: 1.2em;
+	}
+	
+	.et__articles__img__figure {
+		max-width: 20.8em;
+	}
+
+	.et__articles__date,
+	.et__articles__category {
+		font-size: .8rem;
+	}
+
+	.et__articles__heading,
+	.et__articles__cta {
+    max-width: 94%;
+	}
+
+	.et__articles__heading {
+    font-size: 4rem;
+	}
+
+	.et__articles__list {
+		margin-bottom: 2.4em;
+	}
+
+	.et__articles__title,
+	.et__articles__cta {
+		font-size: 1.2rem;
+	}
+
+	.et__articles__cta {
+		display: block;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 29.625rem) {
+	.et__pizza__hero .wrapper {
+		flex-direction: column-reverse;
+		width: min(167.2em, 100%);
+	}
+
+	.et__pizza__hero__img {
+		width: 100%;
+		height: auto;
+	}
+
+	.et__pizza__hero__copy {
+		max-width: 87.5%;
+		margin-block: 3.2em;
+	}
+
+	.et__pizza__hero__cta {
+		display: block;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 29.25rem) {
+	.et__featured__flavors {
+		padding-block: 3.2em;
+	}
+	
+	.et__featured__flavors__heading {
+		font-size: 4rem;
+	}
+
+	.et__featured__flavors__description,
+	.et__featured__flavors__cta,
+	.et__featured__flavors__price {
+		font-size: 1.2rem;
+	}
+
+	.et__featured__flavors__list__item {
+		max-width: 20.8em;
+	}
+
+	.et__featured__flavors__cta {
+		display: block;
+		text-align: center;
+	}
+
+	.et__featured__flavors__name {
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (max-width: 25rem) {
+ .et__pizza__cart__loaded__item__img {
+	 width: 5.5em;
+ }
+
+ .et__pizza__cart__loaded__item__name {
+	 font-size: 1.2rem;
+ }
+
+ .et__pizza__cart__loaded__item__subtotal {
+	 font-size: 2rem;
+ }
+}
+
+@media screen and (max-width: 22.5rem) {
+	.et__subfooter__1 {
+		padding-block: 3.2em;
+	}
+
+	.et__subfooter__2 {
+		gap: 2.4em;
+	}
+	
+	.et__subfooter__widget__title {
+		font-size: 1.6rem;
+	}
+
+	.et__subfooter__widget__content__list__item,
+	.et__subfooter__copyright {
+		font-size: 1.2rem;
+	}
+}
